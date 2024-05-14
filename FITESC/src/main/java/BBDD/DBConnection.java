@@ -25,7 +25,7 @@ public class DBConnection {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String uri = String.format("jdbc:mysql://%s/%s", Esquema.HOST,Esquema.DB_NAME);
 
-            connection = DriverManager.getConnection(uri,"root","1234");
+            connection = DriverManager.getConnection(uri,"root","");
         } catch (ClassNotFoundException e) {
             System.out.println("No se encuentra el driver");
         } catch (SQLException e) {
